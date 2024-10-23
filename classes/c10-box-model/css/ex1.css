@@ -1,0 +1,38 @@
+*{
+    /* css 한해서 수치가 0인 경우에 한해서 단위가 생략가능하다 */
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    border: 10px solid black;
+    width: 1200px;
+}
+.a{
+
+    background: red;
+    width: 500px;
+    height: 300px;
+}
+
+.b{
+    background: orange;
+    width: 500px;
+    height: 200px;
+    border: 10px solid lime;
+}
+.c{
+    width: 500px;
+    height: 150px;
+    background-color: green;
+    border: 10px solid aqua;
+    box-sizing: border-box;     
+    /*  테두리 패딩 값이 포함된 값이150 */
+}
+
+
+/* a-300
+   b-220
+   c-130 박스사이즈(보더 사이즈 값을 빼야된다)
+   d-690
+   e-500=1840*/

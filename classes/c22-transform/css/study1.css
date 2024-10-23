@@ -1,0 +1,87 @@
+.box{
+    border: 5px solid black;
+    width: 300px;
+    height: 300px;
+   
+   
+}
+
+.a{
+    transform: translateX(100%);
+    /* 태그의 너비만큼 이동  transform은 부모가 아닌자기 자신의 100%너비만큼 이동한다 */
+}
+
+.b{
+    transform: translateY(100px);
+    /*  0이면 원래위치 -50%는  300px에  eogks50%반만큼
+    자신의 높이에 비례해서 이동한다*/
+}
+
+.parent{
+    background-color: cadetblue;
+    min-height: 900px;
+    perspective: 1000px;
+    /* 부모태그 원근감 공간 설정하기 */
+}
+.c{
+    margin-left:auto ;
+    transform: translateZ(-1000px);
+    perspective-origin: 0% 50%;
+
+
+    /* 가운데 중심(가장 먼곳 perspective-origin=(50% 50%)부모태그의x,y좌표 )
+    으로 몰리는 것 /공간안에서 중심으로 몰린다 생각해야한다
+    중심이 되는 좌표는 위와 같이 변경이 가능하다. 기본값50% 50%
+     */
+}
+
+
+.d{
+    transition: all 1s ease 0s;
+    /* 모든변환하는 속성을 전환시킨다 (애니메이션) */
+   
+}
+
+.d:hover{
+    transform: rotate(-500deg);
+    /* -는 반대 방향으로 회전 */
+    transform-origin:100% 50%;
+    /* 회전하는 기준을 변경 하는 것 
+    변형의 기준좌표 50% 50%가 기준 값이다 */
+
+}
+
+.e,.f{
+    transition: all 3s ease 0s;
+}
+.e:hover{
+    transform: rotateY(30deg);
+
+}
+
+.f:hover{
+    transform: rotateX(180deg);
+}
+
+
+.g{
+    margin: 0 auto;
+    transition: all 1s ease 0s;
+    transform-origin:100% 50% ;
+}
+
+.g:hover{
+    transform: scaleX(200%);
+
+}
+
+.h:hover{
+    transform:scaleY(200%)
+}
+.i:hover{
+    transform: scale(2,2);
+    /*   transform: scale(2);=축약형 
+    scale(2)라고 값을 1개만 적으면 x축y축 둘다 값이 2로 동일한 경우의 축약표현이다. */
+}
+
+

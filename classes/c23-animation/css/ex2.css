@@ -1,0 +1,60 @@
+ul{list-style: none;}
+*{margin: 0;  padding: 0;}
+
+.station{
+    overflow: hidden;
+    font-weight: bold;
+    border: 5px solid orange;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    transform: rotate(30deg)scale(1.5);
+    z-index: -1;
+    opacity: 1;
+    
+}
+
+.train{
+    width: 200%;
+    display: flex;
+    /* 나란히 배치 */
+    /* align-items: center; 글자의 수를 늘리면 높이가 폰트 사이즈가줄어들면서 높이가
+    낮아지기 때문에 정렬을 가운데로 바꿔준다. */
+
+}
+
+.train>li{
+    border-top: 1px solid green;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+
+
+}
+
+.a{
+    font-size:calc(100vw /18 ) ;
+                        /*글자갯수  */
+    animation: moveA 20s linear -10s infinite;
+                             /*  - 는 먼저에 출발 했다 */
+}
+
+.b{
+    font-size:calc(100vw / 17.5 ) ;
+    animation: moveB 20s linear -20s infinite;
+    /* delay시간을 5초 뒤로 설정해준다  a,b는 시간이 같으면 안된다  앞애 진행 시간에 따라
+    격차 시간도 달라진다*/
+}
+
+
+@keyframes moveA{
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+
+@keyframes moveB{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(-200%);}
+    /* 자기자신의 기준에서 해석해야 한다 */
+}

@@ -1,0 +1,93 @@
+*{margin: 0; padding: 0;}
+
+#hero{
+    /* border: 1px solid red; */
+    height: 100vh;
+    position: relative;
+    /* 기준영역 먼저 설정 */
+
+}
+#hero video{
+    width: 100%;
+    height: 100%;
+    /* %를 사용할 때 부모한테 너비 높이가 명확하게 지정해줘야지
+    자식태그에서도 %를 사용할 수 있다 */
+    object-fit: cover;
+}
+
+.floatingbox{
+    /* border: 1px solid rgb(31, 185, 246); */
+    position: absolute;
+    /* 무조건 좌표 설정해야함 */
+    left: calc(50% - 45%);
+    /* 전체에서 반 나눈걸 뺀다 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    top:calc(50% - 45%);
+    width:90%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.383);
+    color: #fff;
+    /* position: absolute; 으로 설정하면 인라인블록형태가 된다 */
+    backdrop-filter: blur(5px);
+}
+
+.floatingbox>*{
+    /* border: 1px solid skyblue; */
+}
+
+.floatingbox h2{
+    font-size: 10rem;
+}
+.floatingbox>p{
+    width: 50%;
+    margin-top: 2rem;
+}
+
+/* 공중에 있을 때는 마진 적용이 잘 안된다 */
+
+header{
+    background: orange;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+main{
+    min-height: 100vh;
+    margin: 0 2rem;
+    /* 바깥쪽 고정 컨테이너   안쪽은 가변*/
+}
+main h2{
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+.stickybox>section{
+    /* border: 1px solid red; */
+    height: calc(100vh - 100px);
+    position: sticky;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.stickybox>section:nth-of-type(1){
+    background: url("../imgs/1.jpg") no-repeat 50% 50% / cover;
+}
+.stickybox>section:nth-of-type(2){
+    background: url("../imgs/2.jpg") no-repeat 50% 50% / cover;
+}
+.stickybox>section:nth-of-type(3){
+    background: url("../imgs/3.jpg") no-repeat 50% 50% / cover;
+}
+.stickybox>section:nth-of-type(4){
+    background: url("../imgs/4.jpg") no-repeat 50% 50% / cover;
+}

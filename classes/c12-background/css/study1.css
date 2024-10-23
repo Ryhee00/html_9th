@@ -1,0 +1,97 @@
+*{margin: 0; padding: 0;}
+
+.pre{
+    white-space:pre ;
+}
+.prewrap{
+    white-space: pre;
+}
+.desc{
+    padding-bottom: 50px;
+    border-bottom: 5px solid black;
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+}
+.box{
+    color:#fff;
+    background-color:blue ;
+    /* 테두리 안쪽 다 적용 */
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+}
+.box2{
+    margin: 100px 0;
+    height: 80vh;
+    /* 전체100vh에 80vh 상대적 화면을 줄이면 줄어드는 대로 적용 */
+    background-color: bisque;
+    background-image: url("../img/book-8643904_640.jpg");
+    background-repeat: no-repeat;
+    /*no-repeat, x-repeat,y-repeat */
+    /* 기본값이 repeat이기 때문에 반복된다 위와 같이 따로 x,y로 설정을 해줘야한다 */
+    /* 배경색이 가장 밑에 깔리고 그 위에 배경이미지가 올라간다 */
+    /* background-position: 100px 200px; */
+    /* 0px 0px 기본값 */
+    /* background-position: 50% 50%; */
+    /* 이미지 중앙 위치 */
+    /* background-position: 100% -100%; */
+    /* background-position:right top ;
+    background-position:right bottom ;키워드로 적어서도 사용가능 */
+    background-position: calc(100% - 60px) calc(100% - 70px);
+    /* calc 수치가 들어가는 곳에서는 사용가능하다
+    부호 앞,뒤로는 띄어쓰기 필수 */
+
+
+}
+
+.box3{
+    height: 100vh;
+    color:#fff ;
+    background-color: aquamarine;
+    background-image: url("../img/book-8643904_640.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px auto;
+    background-size: auto 300px;
+    /* 이미지가 찌그러진다 따라서 다른 하나는 auto 값으로 변경 */
+    /* background-size: auto auto;(기본값)  = 이미지의 원본 크기*/
+    background-size: 100% auto;
+    background-size: auto 100%;
+    background-size: cover;
+    /* 태그이 공간을 가득 채우는 방식-배경이미지가 잘려서 아보일 수 도 있다. */
+    background-size:contain ;
+    /* 이미지가 태그의 공간안에 잘리지않는 선에서 최대크기로 들어가서 채우는 방식=cantain */
+    background-position: 50% 50%;
+    background: aquamarine  url("../img/book-8643904_640.jpg") no-repeat 0 0 / cover;
+    /* background-size 앞에는 구분하는 /를 필수   순서암기  축약형으로 많이 사용*/
+    /* background: red; 축약형이 아니기 때문에 이미지가 없음
+    background-color 로 색을 지정하면  백그라운드 이미지만 변경됨 */
+}
+.box4{
+    border: 1px solid #fff;
+    width: 50vw;
+    height: 50vw;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    /* vw  너비에만 적용된다는 것이 아니기 때문에 높이나 여백에도  사용 가능 */
+    background:aquamarine url(../img/book-8643904_640.jpg) no-repeat 50% 50% /cover ;
+    background-attachment: fixed;
+    /* 배경이미지를 화면에 고정시킴 */
+}
+
+.box4.blend{
+    background-blend-mode: multiply;
+}
+.blur{
+    border: 1px solid red;
+    width: 80%;
+    /* % 단위의 기준인 부모태그에서 80%만 적용 */
+    height: 80%;
+    margin: 0 auto;
+     margin-top: 10%;
+     -webkit-backdrop-filter: blur(10px);
+     /* 비표준css속성
+     css속성 표준 모든 브라우저에 똑같이 적용되는 것
+     비표준은 모든 브라우저에 적용이 되진 않는다 */
+     backdrop-filter: blur(10px);
+}

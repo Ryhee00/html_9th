@@ -1,0 +1,35 @@
+@font-face{
+    font-family:"내폰트" ;
+    /* 순수영문 "" 생략가능   (한글이거나 영어에 띄어쓰기나 특수문자)는 "" 필요  */
+    src:url(../font/SMUSnowflake-Bold.otf);
+}
+
+@font-face {
+    font-family: ;
+    src: url(../font/BagelFatOne-Regular.ttf);
+}
+
+
+.smus{
+    font-family: "내폰트";
+}
+
+
+.bagle{
+    font-family: "베이글";
+}
+.ptage{
+    font-family: "내폰트","베이글","san-serif";
+    /* san-serif-획이없는 고딕체 계열로 적용한다.
+       serif-획이있는 명조체 계열로 적용한다. */
+}
+.f20{
+    font-size: 20px;
+}
+.f30{
+    font-size: 30px;
+}
+.f20.f30{
+    font-size:50px;
+    
+}

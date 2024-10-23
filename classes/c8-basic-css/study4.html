@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일의 상속</title>
+    <style>
+        .parent{color: red;}
+        h3{color: blue;
+                /*  직접 선택한 경우상속스타일은 점수상관 없이 스타일이 적용된다. */
+        }
+        .parent h3{color: aqua;}
+        /* 10+   1 */
+        div.parent h3 {
+    color: aquamarine;
+    font-size: 49px;
+    background: #ffeb3b63;
+}
+
+</style>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1>스타일의 상속</h1>
+    <p>부모태그가 자식태그에게 스타일을 물려주는 행위</p>
+    <p>스타일의 상속은 언제나 일어나지 않는다-> 모든css속성이 자식태그에게 상속되지는 않는다.</p>
+    <p>주로 글씨색상과 크기 등 글씨와 관련된 css속성만 상속된다.</p>
+    <p>부모로부터 상속받는 상속스타일은 우선순위점수와 관계없이 언제나 후순위로 밀린다.</p>
+
+    <div class="parent">
+        <h3>title</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sequi exercitationem est placeat quam fuga cum nobis eius aliquid quia, 
+        voluptates ex voluptatum porro minus accusamus deleniti quo obcaecati blanditiis.
+        </p>
+        <div class="frame">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt illum ab quo asperiores voluptate similique eum amet labore cumque? Voluptas
+               perferendis fuga voluptate alias quas et, velit consequuntur fugiat suscipit?</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <h1>&&(and연산자)</h1>
+    <p>&&연산문자는 '그리고'라고 해석을 하며 전체경우가 ture일 때만 ture로 계산을 하고 어느 한 경우라도 false라면 전체를 false로 계산한다.</p>
+    <script>
+        10>2  &&  5>1   //ture로 계산된다.띄어쓰기 생략가능,&&기준으로 양 옆이 ture 여야 계산된다.
+        10<2 && 5>0    // false
+        5>1 && 12>=12 && 10>=10   //ture
+        10>5 &&  "good" && 10<20    //ture  good는 문자데이터 인데 문자가 표시돼있으니깐 ture
+        !(!2 && "" && undefined)   //ture   어느하나라도 false이면 전체가 false임
+        let b = 10 && 2 &&"hi"   //   "hi"     10 && 0 && 10  왼쪽 부터 해석하는데 && 는 하나라도 false가 나오면  false이기 때문에 false 값이  뜬다
+       
+        alert(b)
+        </script>
+        <h1>|| (or연산자)</h1>      
+        <p>또는 연산자는 좌우로 둘다 false일 때만 전체를 false로 계산</p>
+        <p>여러 중 하나라도 ture라면 전체를 ture로 계산</p>
+        <script>
+            5<10 ||  -2<9 || -3<5      // 맨 앞이 ture면 뒤에꺼 계산안해도 전부 ture
+            -10>=-20 || 5<2 || 0==0    //ture
+            0 || "" || 5  //ture
+            let a = 10 || "" || 5    //a의 내용을 해석하면서 가장 먼저나오는 ture 값을 읽는다.   ->=!10 || "" || 5  ->5 
+             //  하지만 or연산자는 전체가 ture인 경우는 false가 나오기 전까지는 끝까지 해석해야 한다.  
+        </script>
+        <h1>quiz</h1>
+        <p>사용자에게 아이디와 비밀번호를 물어보고 정상적으로 입력했다면 알림창으로 [환영합니다] 라고 나오게하고
+            그렇지 않으면 [계정정보가 올바르지 않습니다.]
+            아이디 : "green"
+            비밀번호 : "1234"
+        </p>
+        <script>
+            let user_id= prompt("아이디를 입력해주세요")
+        
+            let user_pw = prompt("비밀번호를 입력해주세요")
+          
+         
+        let result =  user_id=="green" && user_pw=="1234" ?"환영합니다" : "계정정보가 올바르지 않습니다."   
+        alert(result)
+       
+   
+                       
+            
+         
+        </script>
+</body>
+</html>

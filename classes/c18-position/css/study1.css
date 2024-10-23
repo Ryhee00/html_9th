@@ -1,0 +1,82 @@
+.box{
+    border: 10px solid black;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.a{
+    position: relative;
+    /* left/right/top/bottom */
+    right: 100px;
+    /* 기준면에서 박스안쪽방향으로 이동 */
+    bottom: 100px;
+}
+.b{
+    position: absolute;
+    /* nomal flow에서 제외된다./현재위치에서 공중에 뜬 상태 */
+    background-color: aqua;
+    right: 100px;
+    bottom: 100px;
+    z-index: 2;
+}
+.c{
+    position: absolute;
+    background-color: rgb(21, 13, 250);
+    right: 150px;
+    bottom: 150px;
+    z-index: 1;
+}
+.d{
+    position: absolute;
+    background-color: rgb(237, 249, 6);
+    right: 200px;
+    bottom: 200px;
+}
+
+.boxwrap{
+    border: 10px solid orange;
+    height: 200vh;
+    position: relative;
+}
+.innerbox{
+    border: 10px solid rgb(3, 142, 42);
+    width: 1000px;
+    height: 100vh;
+    left: 200px;
+    top: 200px;
+    position: absolute;
+}
+.frame{
+    border: 10px solid red;
+    position: relative;
+    height: 500px;
+    /* 부모태그에 확실한 너비높이가 설정이
+    안되어 있으면 높이가0 으로 변하면서 레이아웃이 틀어져 버리면서
+    위치가 겹쳐진다. */
+}
+
+.con{
+    border: 10px solid blue;
+    width: 60%;
+    /* margin: 0 auto; 공중에 떠잇기 때문에 마진도 적용이 안된다 */
+    position: absolute;
+    /* 일반적이 레이아웃에서는 사용 안함
+     일반적인 레이아웃 위에 떠있는 특수적인 레이아웃에만 적용됨
+     화면위에 떠있으면서 고정되어 있으면 fixed/ 고정이 안되있으면 absolute  */
+    left: 20%;
+    top: 100px;
+}   
+
+.e{
+    position: fixed;
+    /* left: 100px; */
+    /* top: 100px; */
+    right:100px;
+    bottom:100px;
+}
+.f{
+    position: sticky;
+    left: 100px;
+    top: 100px;
+}

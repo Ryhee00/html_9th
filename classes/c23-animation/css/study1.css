@@ -1,0 +1,35 @@
+@keyframes my_rotate {
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{transform: rotate(180deg);}
+}
+
+.box{
+    border: 5px solid black;
+    width: 300px;
+    height: 300px;
+}
+
+
+.ani1{
+    /* animation-name:my_rotate ;
+    animation-duration:4s ;
+    animation-timing-function:linear ;
+    animation-delay:2s ;
+   /* - delay는 이미 몇 초 전에 애니메이션이 시작이 됐다는 의미 */
+    /* animation-iteration-count: infinite;
+    animation-direction: noraml; */
+     /* reverse 100% ->0% 반대로 회전 */
+    /* animation-fill-mode: backwards; */
+    /* 마지막 애니메이션을 어떤 방향으로 끈낼 것이냐 */
+
+    animation: my_rotate 4s linear 0s infinite normal forwards; 
+                                             /* 방향    끝난는거 */
+    /* 축약형 */
+}
+
+.ani1:hover{
+    animation-play-state:paused ;
+    /* 마우스를 올렸을 때 멈츔 */
+}

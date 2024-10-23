@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="container-grid">
+    <path class="cls-1" d="M23.71,23.26l-10.71,2.74-10.71-2.74L0,0H26c-.76,7.75-1.53,15.51-2.29,23.26Zm.62-21.89H1.67L3.72,22.2l9.28,2.37,9.28-2.37L24.33,1.37ZM6.73,15.05h3.06l.07,1.71,3.14,.96,3.14-.96,.23-3.08h-6.73l-.16-2.74h7.04l.23-2.74H6.2l-.23-2.74h13.99l-.38,5.47-.54,7.87-6.04,1.78-6.04-1.78-.23-3.76Z"/>
+  </g>
+</svg>

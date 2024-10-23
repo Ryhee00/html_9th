@@ -1,0 +1,18 @@
+@font-face {
+    font-family: '잘난체';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    /*src 태그만 필수유지
+    font-family이름 변경 가능 아래는 지워도됨 */
+    font-weight: normal;
+    font-style: normal;
+}
+.font1{
+    font-family: '잘난체';
+}
+.roboto{
+    font-family: "roboto", sans-serif;
+}
+
+.edu{
+    font-family: "Edu AU VIC WA NT Guides", system-ui;
+}

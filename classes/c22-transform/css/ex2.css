@@ -1,0 +1,20 @@
+.box{
+    border: 5px solid black;
+    transition: all 1s ease 0s;
+    width: 300px;
+    height: 300px;
+    transform: translateX(100px)translateY(100px)
+    rotate(30deg)
+    scale(0.6);
+    /*  여러개를 한번에 적용시킬 수 있다. */
+  
+}
+
+.mom:hover .box{
+    transform:translateX(0px) ;
+    transform: translateY(0px);
+    rotate: 0;
+    scale: 1;
+    
+
+}

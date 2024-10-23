@@ -1,0 +1,135 @@
+*{margin: 0; padding: 0;}
+
+header{
+    background-color:palegreen ;
+    height: 56px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* =right;0: */
+    /* 너비가 줄어든 이유 공중에 띄면 display 에서 인라인 형태로 변하기 때문에 너비를
+    따로 지정해 줘야한다
+    너비는 부모 너비가 지정 안되있어도 % 사용가능 / height는 부모태그의 높이가 지정되어 있어야지
+    사용가능하다 */
+    display: flex;
+    justify-content: space-between;
+    /* 메인축 기준으로 정렬 */
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+ 
+
+
+   
+}
+
+aside{
+    background-color: palevioletred;
+width: 240px;
+height: calc(100vh - 56px);
+/* calc 계산식 브라우저 높이에서 헤더 높이를 뻄 */
+overflow: auto;
+position: fixed;
+top: 56px;
+left: 0;
+
+
+}
+
+.category{
+    height: 56px;
+    background-color: coral;
+    position: fixed;
+    width: calc(100% - 240px);
+    right: 0;
+    /* = left:240px; */
+    top: 56px;
+}
+
+main{
+    background-color: aqua;
+    min-height: 200vh; 
+    /* 내용이 없어도 최소 화면 높이를 보여지는 브라우저에 2배로 설정 */
+    margin-left: 240px;
+    margin-top: 112px;
+     /* calc(56px*2) 곱하기는 띄어쓰기를 안해도된다 */
+
+    /* width: calc(100% - 240px); */
+    
+   /* 다른 방법  position fixed/ overflow scroll */
+    padding: 16px; 
+    /* box-sizing: border-box;  margin auto로 설정되어 있기 때문에 박스사이즈보더나 너비를 설정 안하고도 가능하다*/
+        }
+
+    
+    header div{
+        background-color: blueviolet;
+        height: 24px;
+        /* 높이지정을 해야된다!!!!!! */
+    }
+    .logo{
+        width: 170px;
+    }
+
+    .account{
+        width: 225px;
+    }
+
+    .search{
+        width: 730px;
+    }
+
+.aside1{
+      
+}
+aside>div{
+    min-height: 300px;
+    background-color: antiquewhite;
+    border-bottom: 1px solid black;
+    padding: 12px;
+
+}
+
+aside>div>section{
+ min-height: 150px;
+ background-color:rgb(70, 48, 239) ;
+ border-bottom: black;
+ margin-bottom: 12px;
+
+}
+
+aside>div>section:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+
+    /*  section 태그가 많아져도 쉽게 수정할 수 있다
+    공토적인 스타일을 만들어 놓고 마지막에 스타일을 빼주는 방식 */
+}
+ul{list-style: none;}
+
+.normalvideo ul{
+   display: flex; 
+   flex-wrap: wrap;
+}
+
+.normalvideo ul li{
+background-color: #fff;
+height: 340px;
+margin-bottom: 32px;
+margin-right: 16px;
+width: calc((100% - 48px)/4);
+/* = width: calc((100% - 16px*(4 - 1))/4);*/
+}
+
+
+.normalvideo ul li:nth-of-type(4n){
+    margin-right: 0;
+} 
+.normalvideo ul li :nth-last-of-type(1),
+.normalvideo ul li :nth-last-of-type(2),
+.normalvideo ul li :nth-last-of-type(3),
+.normalvideo ul li :nth-last-of-type(4){
+    margin-bottom: 0;
+
+}

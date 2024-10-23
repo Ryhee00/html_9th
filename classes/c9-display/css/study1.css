@@ -1,0 +1,27 @@
+.a{
+
+    background: pink;
+}
+.b{
+
+    background: salmon;
+}
+.b li{
+
+    background: wheat;
+}
+
+.c{
+    background: lightseagreen;
+    width: 400px;
+    height: 400px;
+}
+
+.c+.a{display: inline;
+}
+
+.d{
+background: rebeccapurple;
+ width:400px;
+ height: 400px;
+}

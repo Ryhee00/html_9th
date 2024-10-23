@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제2</title>
+</head>
+<body>
+    <div class="membership">
+       
+         <form action="#">
+            <h2>CREATE YOUR ACCOUNT    </h2>
+               <div>
+                <label for="user_Email">Email Address</label><br>
+                <input type="text" id="user_email">
+               </div>
+            
+                <div>
+                    <label for="user_email_confirm">Confirm your Adress</label><br>
+                    <input type="text" id="user_email_confirm">
+                </div> 
+
+                <div>
+                    <label for="user_residence">Country of Residence</label><br>
+                    <select id="user_residence"  ></select>
+                    <option value="Korea Republic of"></option>
+                    <option value=" Region not selected"></option>
+                    <option value="Afghanistan"></option>
+                </div>
+                <!-- 구글 립캡차 연동 부탁드립니다 -->
+                 <div class="recaptcha"></div>
+                <div>
+                    <input type="checkbox" id="user_agree">
+                    <label for="user_agree">I am 13 year of age or older
+                        and agree to the terms of the <a href="#" target="_blank">Steam Subscriber Agreement</a>
+                        and the <a href="#" target="_blank"> Valve Privacy Policy</a>
+                    </label>
+                </div>
+                 <button type="submit">Continue</button>
+         </form>
+
+    </div>
+</body>
+</html>

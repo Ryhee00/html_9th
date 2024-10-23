@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수학계산관련함수</title>
+</head>
+<body>
+    <h1>수학계산관련함수</h1>
+    <p>모두 결과를 계산해서 함수가 사용되었던 자리에 결과 값을 남긴다.</p>
+     <script>
+     console.log( Math.ceil(5.287155546))
+     console.log( Math.round(5.423456789))
+     console.log( Math.floor(5.123456789))
+     console.log( Math.pow(10,2))
+     //10의 제곱을 의미한다.
+     console.log( Math.sqrt(100))
+     // 루트 제곱근 의미한다.
+     console.log( -Math.sqrt(100))
+     console.log( Math.abs(-30))
+     // 부호가 제거된다
+     console.log(Math.max(5,55,55,555,22,2248))
+     // 가장큰 숫자가 나온다
+     console.log( Math.min(1,88,51,549,64,4,0,56))
+     // 가장 작은 숫자////////////ceil/round/floor/random많이 사용된다
+     console.log( Math.random())
+     // 0<x<1 실행이 될 때마다 0<랜덤수<1 랜덤수를 뽑아내는 함수
+    
+     let dice = Math.ceil(( Math.random()*6))
+    //  주사위 확률1~6까지
+     console.log(dice)
+     console.log("나폴리마피아"[dice-3])
+    //  0~5까지 랜덤수가 나온다
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참거짓데이터 - boolean</title>
+</head>
+<body>
+    <h1>boolean 데이터</h1>
+    <p>값이 두개  밖에 없다. ture/false</p>
+    <h2> 비교를 통하여 참거짓이 계산된다.</h2>
+    <p>크다,작다, 같지않다 와 같은 비교를 통하여 참거짓이 계산된다.</p>
+    <p>!는 자바스크립트에서 부정의의미 (not)으로 사용된다.</p>
+    <script>
+        "asdf"
+        123
+        true
+        false
+        console.log(10>7)
+        console.log(10<7)  
+        console.log(10>=10)   //10은10보다 크거나 같다
+        console.log(8>=9)     //8은9보다 크거나 같다.
+        console.log(10=="10") //==같다의 부호,데이터 형태까지는 아니지만 대충 같다
+        console.log(10===10)  //데이터 형태까지 완전히 같다
+        consol.log(10!=10)    //데이터 형태까지는 아니지만 대충 같지 않다
+        consol.log(10!==10)   //데이터 형태까지 비교했을 때 같지 않다
+        console.log(!(10>2))   //안에 있는()먼저 해석 10은2보다 크다  것을 부정한다  ->false
+        console.log(!(!(10>2)))//안에 있는()먼저 해석 10은2보다 크다  것을 부정한다  이것을 또 부정한다  ture
+        // 존재가 있다 없다 에도 적용이 된다.
+        </script>
+      <h1>있으면 ture 없으면 false</h1>
+      <h2>false로 간주되는 경우</h2>
+    <ul>
+        <li>숫자데이터 값이 0인 경우</li>
+        <li>문자데이터인데 내용이없는 빈문자인 경우</li>
+        <li>변수를 선언했는데 변수 안에 아무 값도 저장되지 않는 경우</li>
+        <li>underfined 값은 false로 간주된다</li>
+        <li>null 값은 false로 간주한다.</li>
+    </ul>   
+    <script>
+        console.log(123)     //수가 있으므로 ture로 간주된다
+        console.log(-10)       //수가 있으므로 수가 있다니깐 ture
+        console.log(0)         //수가 없으므로 false로 간주된다.
+        consol.log("")        //문자데이터 형태를 띄었지만 문자내용이없으므로 false로 간주된다.
+        let a              
+       console.log(a)        //변수를 설정하고 아무값도 넣지 않았으므로 false로 간주된다.
+       undefined             //undefined데이터값은 기본으로 false로 간주된다.
+       let b = null         //null은 아무내용을 넣지않겠다는 설정
+    // let resilt  = prompt("나이를 입력해주세요")      //입력을 안할경우 null이라고 뜬다 -->  false
+        !""    // ture로 간주된다   확실한 ture보다는 간주된다고 하는 것이맞다
+
+        let c  
+        !c  //ture로 간주된다.(c라는 변수에 값이 없다면)
+        !undefined  //ture로 간주된다
+        !null   //ture로 간주된다.
+    </script>
+
+</body>
+</html>

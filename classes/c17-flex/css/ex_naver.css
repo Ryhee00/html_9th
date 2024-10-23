@@ -1,0 +1,126 @@
+*{margin: 0; padding: 0;}
+
+header{
+    background: lightblue;
+    width: 1280px;
+    height: 215px;
+    margin: 0 auto;
+}
+
+main{
+    width: 1280px;
+    min-height: 300px;
+    background: yellowgreen;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.left{
+    background: pink;
+    width: 830px;
+   
+
+}
+
+.left>div{
+    margin-bottom: 16px;
+}
+
+
+.a{
+    background: cadetblue;
+    height: 130px;
+}
+
+.b{
+    background: cadetblue;
+    height: 426px;
+}
+.c{
+    background: cadetblue;
+    height: 560px;
+}
+
+.d{
+    background: cadetblue;
+    height: 858px;
+    
+}
+.left>div:last-of-type{margin-bottom: 0;}
+
+
+
+
+
+
+
+
+footer{
+    background: rgb(239, 231, 143);
+    padding: 30px 0 78px;
+    height: 400px;
+    width: auto;
+    /* 100%로 지정한 것이기 때문에 auto 값으로 설정해야 한다. */
+    box-sizing: border-box;
+}
+
+.innerfooter{
+    width: 1280px;
+
+    margin: 0 auto;
+    /* 부모의 공간안에서 좌 우 여백이 auto */
+    background-color: bisque;
+
+}
+
+.right{
+    background: rgb(181, 250, 196);
+    width: 420px;
+}
+.right>div{
+    margin-bottom: 16px;}
+.right>div:last-of-type{margin-bottom: 0;} 
+
+
+.e{
+    background: plum;
+    height: 164px;
+}
+
+.f{
+    background: plum;
+    height: 240px;
+}
+.g{
+    background: plum;
+    height: 80px;
+}
+.h{
+    background: plum;
+    height: 172px;
+}
+.i{
+    background: plum;
+    height: 236px;
+}
+
+.j{
+    background: plum;
+    height: 236px;
+}
+
+.k{
+    background: plum;
+    height: 240px;
+}
+
+.l{
+    background: plum;
+    height: 516px;
+}
+
+.m{
+    background: plum;
+    height: 80px;
+}

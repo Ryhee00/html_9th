@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    border: 10px solid black;
+    width: 50%;
+    /* 부모태그 넓이의 50% */
+}
+.box2{
+    border: 10px solid black;
+    margin-top: 50px;
+    width: 1000px;
+}
+.box2 section{
+    border: 10px solid saddlebrown;
+    width: 50%;
+}
+.box3{
+    border: 10px solid black;
+    margin-top:50px ;
+    width: 800px;
+}
+.box3 section{
+    border: 10px solid darkgreen;
+    width: 50vw;
+    /* width:50%;  %->부모태그에 적용되는 값은 반
+    고정 수치이기 때문에 화면을 조절해도 바뀌지 않는다 */
+     /* vw화면너비에 대한 값이기 때문에 화면 넓이에 따라 변한다 단위는viewport width 쟝소 */
+     height: 30vh;
+     /* vh단위는 viewport height */
+}
+
+.box4{
+    border: 10px solid black;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.box5{
+    border: 10px solid #000;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 100%;
+
+}

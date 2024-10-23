@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    height: 100vh;
+    position: relative;
+   
+}
+
+.hero video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.floatingtxt{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.208);
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+   
+}
+
+
+
+
+.innertext{
+    border: 1px solid #fff;
+    width: 60%;
+    
+}
+   
+.innertext h2{
+    display: flex;
+    justify-content: center;
+}
+   
+
+.innertext h2 b{
+    opacity: 0;
+    font-size: 5rem;
+    /* animation:fadein 4s ease 0s 1 ; */
+    /* 적용방법
+    fade in 등록이름 시간 속도감 있게~~  */
+    
+}
+.innertext h2 b:nth-of-type(1){animation: fadein 5s ease 0s forwards;}
+.innertext h2 b:nth-of-type(2){animation: fadein 5s ease 0.1s forwards;}
+.innertext h2 b:nth-of-type(3){animation: fadein 5s ease 0.2s forwards;}
+.innertext h2 b:nth-of-type(4){animation: fadein 5s ease 0.3s forwards;}
+.innertext h2 b:nth-of-type(5){animation: fadein 5s ease 0.4s forwards;}
+.innertext h2 b:nth-of-type(6){animation: fadein 5s ease 0.5s forwards;}
+.innertext h2 b:nth-of-type(7){animation: fadein 5s ease 0.6s forwards;}
+.innertext h2 b:nth-of-type(8){animation: fadein 5s ease 0.7s forwards;}
+
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    
+    /* 30%{
+        transform: translateY(20px);
+        /* 중간 애니메이션 설정 */
+
+
+    100%{
+        opacity:1 ;
+        transform: translateY(0);
+        
+    }
+}
+    
+    
+    
+    
+    /* 1-애니메이셔 등록 2-구간 설정  내가 적용하고자 하는 태그에 animation 속성 적용 */
+   
+    /* fadein{0% 100%}
+    animation-fill-mode:forwards ; */
+
+
+

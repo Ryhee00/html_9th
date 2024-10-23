@@ -1,0 +1,117 @@
+*{margin: 0; padding: 0;}
+
+.box{
+    border: 10px solid black;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    /* 중앙배치 */
+
+    display: flex;
+    /* 위아래 배치가 좌우로 배치
+    가로방향메인축(부모) 오른쪽 start 왼쪽 end 아이템은 start에서부터 나란히 배치된다  이 방향은 바꿀 수 있다. 
+    세로 방향교차축(자식) 무조건 부모의 지시를 따른다*/
+    flex-direction: row;
+    /* 기본값row */
+    justify-content: flex-start  ;
+    /* (justify)메인축 정렬 안에서 이동 flex-start기본값 */
+    align-items:stretch;
+    /* between,around는 align에서 적용되지 않음 */
+
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; 내용이 많아지면서 정해진 박스를 넘어 삐져나감 기본값  
+       flex-container에 적용되는 값  */
+
+    align-content: flex-start;
+    /* align-content는 flex-wrap에서 wrap을 한 후 위의 속성을 사용하면아이템들이 하나의 그룹으로 이동
+    단, flex-wrap이 wrap일 경우 */
+    
+}
+.box> div{
+    border: 1px solid green;
+
+}
+
+.h100{
+    height: 100px;
+    /* 수직축의높이를 100px로 지정했기 때문에 */
+}
+
+.box2{
+    border: 10px solid black;
+    margin: 0 auto;
+    width: 800px;
+    /* 가변컨테이너 */
+    margin-bottom: 50vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+   
+}
+
+.box2>div{
+    border: 1px solid blue;
+    flex-basis: 200px;
+    flex-shrink: 1;
+    /* 기본값/ 0을 설정하면 맨 마지막만 박스 밖으로  나감
+    */
+}
+
+.box2>div:nth-last-of-type(1){
+    flex-shrink: 2;
+/* 남들보다 2배 더 뺀다 / 0은  위에 속성은 안빼고 나머지 애들이  뺀다*/
+}
+
+
+
+.box3{
+    border: 10px solid black;
+    margin: 0 auto;
+    height: 300px;
+    width: 800px;
+    /* 가변컨테이너 */
+    margin-bottom: 50vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+   align-items: center;   
+}
+
+.box3>div{
+    border: 1px solid blue;
+    flex-grow: 1    ;
+    /* 남은 여백을 공평하게 나눠 같는다.하지만 각각의 값은 다르다
+    원래 가지고 있던게 달랐기 때문에/ 기본값은0 */
+}
+
+.box3>div:nth-of-type(1){
+    flex-grow: 3;
+    order: 2;
+    align-self: flex-start;
+}
+
+
+.box3>div:nth-of-type(2){
+    order: 1;
+    align-self: stretch;
+}
+/* order의 기본값은0 /위치 변경/ 숫자만 가능 */
+
+
+
+
+.box4{
+
+    border: 10px solid #000;
+    width: 80%;
+    min-height: 50vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.side{
+    background: lightcyan;
+    flex-basis: 200px;
+}
+.contents{
+    background: lightseagreen;
+    flex-grow: 1;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표준 도구 모음</title>
+</head>
+<body>
+    <h1>브라우저에 내장되어 있는 기본함수</h1>
+
+    <hr>
+    <h2>String()</h2>
+    <p>숫자데이터를 문자데이터로 변환하여 남기는 함수</p>
+
+    <script>
+        String(200)
+    //   = "200"  문자데이터
+
+    console.log(String(200)+10)
+    console.log(String(300).length+20)
+    // </script>
+
+    <h2>Number()</h2>
+    <p>문자데이터를 숫자데이터로 변환하여 남기는 함수</p>
+
+    <script>
+        console.log(Number("300")+30)
+        String(200)+10
+        console.log(Number(String(200)+10)+50)
+    </script>
+
+    <h2>typeof()</h2>
+    <P>괄호안에 데이터의 형태를 검사하고 그 결과를 (문자데이터형태로)함수가 사용된 자리에 남기는 함수</P>
+    <script>
+        console.log(typeof("200"))
+        // =String// 안쪽 부터 해석을 한 후 결과의 값이 뜬다
+        console.log(typeof(typeof(200)))  //
+        //    console.log(typeof("number"))  -> console.log(String)  정답 String.
+        console.log(typeof(200))    //"number"
+        console.log("string"[3])    // "i"
+    </script>
+
+
+    <h2>prompt()</h2>
+    <p>홈페이지사용자에게 괄호안의 질문을 한 후 사용자가 입력한 대답을 함수가 사용되었던 자리에 문자데이터형태로 남겨주는 함수</p>
+    <script>
+        //   prompt("당신의 이름을 입력해 주세요")   //  브라우저에 입력한 값이  문자데이터 형태로 스크립트안에 써있다.
+        //   alert(prompt("당신의 이름을 입력해 주세요")+"님 환영합니다.")   // 이름을 지우고 위에 값을 안으로 넣어 변할 수 있는 수가 들어갈 수 있게 변경
+            document.write("<h2>"+prompt("당신의 이름을 입력해 주세요")+"님 환영합니다."+"</h2>")    //태그를 입력 했기 때문에 css속성도 적용 할 수 있다.
+            // prompt("당신의 나이를 입력해 주세요.")
+            document.write("<p>당신의 나이가"+(Number(prompt("당신의 나이를 입력해 주세요."))+10)+"살이 되시겠군요</p>")
+            
+    </script>
+       
+
+    </body>
+    </html>

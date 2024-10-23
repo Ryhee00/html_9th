@@ -1,0 +1,31 @@
+
+
+.wrap{
+    background-color: bisque;
+    
+}
+
+@media (min-width:1500px){
+    /* 화면 최소너비가1500px인 경우 ---> 1500px보다 클 경우 적용되는 스타일 */
+
+    .wrap{
+        background:coral ;
+        display: flex;}
+}
+  
+
+
+@media (min-width: 1400px) and (max-width:1499px) 
+/* 화면 최소너비가1400px이고 최대너비가 1499px인 경우
+ ---> 1400px보다 크고 1499픽셀보다 작은경우 적용되는 스타일*/
+   {
+       .wrap{
+        background: yellow;
+       }
+   } 
+
+
+
+  
+   /* 방법2
+   구간을 나눠서 하기  , 상속형으로  하기 */

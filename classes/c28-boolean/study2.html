@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항연산자 - ternary operator</title>
+</head>
+<body>
+    <h1>삼항연산자</h1>
+    <p>조건? 조건이 참일때 남겨지는 값: 조건이 거짓일 때 남겨지는 값</p>
+
+    <script>
+        let result1 = 5>3?"a":"b"
+        console.log(result1)     // ture-> : 앞부분만 남는다   
+        let result2 = ""?"배고픔":"배부름"
+        console.log(result2)
+        let result3 = 3-3?100:5    //false  0은 수가 없다고 간주
+        console.log(result3)
+        let score = 80
+        score>90?"A":"B"    //B
+        confirm.log(score>90?"A":score>80?"B":score>70?"C":"D")
+        // 해석 방법  위와 같이 여러개가 중첩되어 있을 때는 브라우저의 읽기 순서와 같이 왼쪽에서 부터 영역을 나누어서
+        //지워가면서 해야한다
+    </script>
+</body>
+</html>

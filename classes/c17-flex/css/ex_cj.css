@@ -1,0 +1,57 @@
+*{margin: 0; padding: 0;}
+
+header{
+    background: black;
+ 
+}
+.headertop{
+    border-bottom: 1px solid #fff;
+    height:48px ;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    /* 대장한테 쓰는 속성 */
+}
+.topmenu{
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+}
+.headerbottom{
+    height: 76px;
+    background-color: #aaa;
+    display: flex;
+    align-items: center;
+}
+.innercontent{
+    width: 1334px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+.cona{
+   height: 1270px;
+   background-color: aquamarine;
+
+}
+.conb{
+    height: 492px;
+    background-color: rgb(77, 4, 247);
+}
+.conc{
+    height: 1116px;
+    background-color: salmon;
+}
+.cond{
+    height: 594px;
+    background-color: darkolivegreen;
+}
+
+.cone{
+    height: 518px;
+    background-color: thistle;
+}
+
+footer{
+    height: 704px;
+    background-color: violet;
+}

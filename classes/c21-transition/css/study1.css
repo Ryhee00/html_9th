@@ -1,0 +1,47 @@
+:root{
+    --maincolor:red;
+    /* 변수를 만드는 곳, 컬러를 변경하고 싶을 때 메인컬러만 변겨하면 된다. */
+}
+
+.box{
+    border: 10px solid var(--maincolor);
+    width: 400px;
+    height: 400px;
+    /* transition-property: all; */
+    /*  transition-property all(모두적용)/width.height*/
+    /* transition-duration: 0.4s; */
+    /* =3000ms */
+    /* transition-timing-function: linear;
+    transition-delay: 0s; */
+    /* 0s->딜레이가 없다(0초뒤에 시작한다) */
+    transition: all 0.4s linear 0s;
+    /* 축약형 */
+
+}
+
+.box:hover{
+    width: 600px;
+    height: 600px;
+    background: palegreen;  
+}
+
+.box2{
+    border: 10px solid var(--maincolor);
+    width: 400px;
+    height: 400px;
+     /* transition-property: width,height,background-color; 
+     transition-duration: 0.4s,0.4s,0.4s; 
+      transition-timing-function: linear,ease,linear; 
+      transition-delay: 0s,0.4s,0.8s;
+     밑에는 축약형*/
+    transition: 
+    width 0.4s linear 0s
+    height 0.4s ease 0.4s
+    background-color 0.4s linear 0.8s;
+
+}
+.box2:hover{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}

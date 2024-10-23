@@ -1,0 +1,68 @@
+p{
+    color: red;
+}
+div p{
+/* div 태그 안에 포함된 자손들 중에서 모든 p태그를 선택한다. */
+color: blue;
+}
+div>p{
+    /* div태그 안에 포함된 자식들 중에서 모든 p태그들 선택 */
+    color: blueviolet;
+}
+.box>p{
+    color: cornflowerblue;
+}
+.box li>p{
+    color: coral;
+}
+li>p{
+
+    color: violet;
+}
+
+.list1~li{
+/* list1 클래스의 다음형제 태그들 중에서 li태그들 선택 */
+    background: pink;
+}
+.list1+li{
+    /* list1클래스의 다음형제 태그 li태그 1개만 선택 */
+background: violet;
+
+
+}
+
+.box2>h3:nth-child(3){
+    /* box2클래스의 자식태그 h3태그이면서 자식을 선택 */
+    color: red;
+}
+.box2>h3:nth-of-type(3){
+/* box2클래스의 자식 h3 태그타입 중에서 3번째 태그를 선택 */
+    color: rgb(13, 13, 243);
+}
+
+.list_box>li:nth-of-type(2n){
+/* n짝수  짝수에 +1은 홀수 */
+font-size: 3rem;}
+
+.list_box>li:nth-of-type(2n+1){
+text-decoration: underline; }
+
+.list_box>li:nth-of-type(3n+1){
+    /* 10개의 리스트가3개씩 3줄 하나가  있을 때  있을 때 첫번쨰 +3 선택  */
+    color: brown;
+}
+a[target="_blank"]{
+    background: black;
+    color: aliceblue;
+}
+a[href="http://www.naver.com"]{
+    color:#aaa;
+    text-decoration: line-through;  
+    /* 취소선 스타일 */
+    pointer-events:none ;
+    /* 클릭이 안되게 함 */
+
+}
+p[data-ry="리희설명"]{
+    font-style: italic;
+}   

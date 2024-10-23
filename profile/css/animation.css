@@ -1,0 +1,17 @@
+@keyframes slideMoveHorizontal{
+    0%{
+        transform: translateX(0%);
+    }
+    12.5%{                  /* 100 / 슬라이드 갯수 */
+    
+       transform: translateX(-12.5%);
+    }
+    25%{
+        transform: translateX(-25%);
+    }
+    /* 위에 값에서 *2 */
+    
+    100%{   
+        transform: translateX(calc(-(100%/8)*(8 - 1)));
+    }
+}

@@ -1,0 +1,37 @@
+.box{
+    border: 5px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+.box1{
+    border-radius: 100px;
+    /* 반지름이 픽셀만큼인 원은 모서리에 적용한다 */
+    box-shadow: 20px -20px 10px rgb(188, 27, 27);
+    /* box-shadow: 0 -20px 0(그림자 확산  정도) red; */
+}
+
+.box2{
+    border-radius: 50%;
+    /* box의 너비 픽셀의 반만큼 */
+    box-shadow: 20px 20px 0 red,
+    -20px -20px 0 blue;
+    /* ,를 이용해서 2개이상의 그림자를 사용할 수 있다
+    위와 같은 방식으로 써라 */
+    
+}
+
+.box3{
+    background-color: blue;
+    border-radius: 50px 100px;
+    /* opacity: 0.5; */
+    /* display: none; */
+    /* display를 꺼버린다는 의미 태그를 없앤다
+    그러면서 box4가 위로 올라온다. */
+}
+
+.box4{
+    border-radius: 0 50px 100px 150px;
+    /* 시계방향으로 각기 다른 값을 지정 할 수 있다. */
+}
+
